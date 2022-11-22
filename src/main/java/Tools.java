@@ -1,9 +1,11 @@
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
 public class Tools {
 
@@ -25,7 +27,8 @@ public class Tools {
 
     public static String serializeStudentList(List<Student> studentList) {
 
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        //Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new Gson();
         String json = gson.toJson(studentList);
 
         return json;
