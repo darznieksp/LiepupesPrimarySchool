@@ -11,7 +11,7 @@ public class Main {
 
         //Convert list to JSON
         String json = Tools.serializeStudentList(studentList);
-        System.out.println(json);
+
         //Convert JSON to list
         studentList = Tools.deserializeStudentList(json);
 
